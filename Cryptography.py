@@ -203,9 +203,9 @@ class FileProcessor:
 
 
 def main():
-    src_file = 'Sample_Image/Original_Img.jpg'
-    encrypted_file = 'Sample_Image/Encrypted_Img.jpg'
-    final_file = 'Sample_Image/FinalDecrypted_Img.jpg'
+    src_file = 'Data/Original_Img.jpg'
+    encrypted_file = 'Data/Encrypted_Img.jpg'
+    final_file = 'Data/FinalDecrypted_Img.jpg'
 
     user_key = 'What is your favourite color?'
     # Encrypting original file creating a new  encrypted file
