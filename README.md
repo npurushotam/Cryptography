@@ -16,11 +16,11 @@ In this program the basic idea is that user will provide a key based on that key
 2. The matrix is _16 * 16_ matrix which has 256 elements and is used to store 1 byte of data.
 4. Now lets say the base values for 3 matrices is (24, 210, 231). Further the base values is incrementeed sequentially and in a cyclic manner to fill up the matrix elements, as follows:
 ```
-24, 25, 26, ..., 255, 0, 1, 2, 3, ... 23
+Matrix-1 : 24, 25, 26, ..., 255, 0, 1, 2, 3, ... 23
 
-210, 211, 212, ..., 255, 0, 1, 2, 3, ... 209
+Matrix-2 : 210, 211, 212, ..., 255, 0, 1, 2, 3, ... 209
 
-231, 232, 233, ..., 255, 0, 1, 2, 3, ... 230
+Matrix-3 : 231, 232, 233, ..., 255, 0, 1, 2, 3, ... 230
 ```
 
 4. During encryption, Data (byte) to be encrypted is splitted into 2 nibbles. The higher nibble acts as row and lower one as column. By using this row, col as co-ordinates we get encoded value from matrix.
