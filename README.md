@@ -25,5 +25,5 @@ In this program the basic idea is that user will provide a key based on that key
 
 4. During encryption, Data (byte) to be encrypted is splitted into 2 nibbles. The higher nibble acts as row and lower one as column. By using this row, col as co-ordinates we get encoded value from matrix.
 5. During decryption, the encoded value which is unique is to be searched in the matrix and co-ordinates (row, col) of matching element are to be treated as the high nibble and lower nibble from which we get original data back.
-6. Also instead of creating a matrix, we simply use mathematical formula to get values from the supposed matrix in constant time.
+6. Also instead of creating an actual matrix, we simply use mathematical formula to get values from the supposed matrix in constant time.
 7. Before the encryption and decryption we also take xor of original data with XOR value that we generated earlier from user key.
